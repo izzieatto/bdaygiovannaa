@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Giovanna!</title>
+    <style>
+        /* Adicione estilos aqui se desejar */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .continue-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .continue-button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="senhaContainer">
+        <h2>Insira a senha para acessar</h2>
+        <p>Dica: Twitter</p>
+        <input type="password" id="senha" placeholder="Senha">
+        <button onclick="verificarSenha()">Enviar</button>
+        <p id="erro" class="error">Senha incorreta. Por favor, tente novamente.</p>
+    </div>
+
+    <div class="container" id="conteudoSecreto" style="display: none;">
+        <h2>18 Coisas que Amo em Você</h2>
+        <div class="item">
+            <p><strong>1 - Olhos:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>2 - Sorriso:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>3 - O seu cabelo perfeito:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>4 - Voz:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>5 - Animação:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>6 - Criatividade:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>7 - Sua bondade:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>8 - Seu senso de humor:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>9 - Suas bochechas!:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>10 - Inteligência:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>11 - Mesmo brava você é engraçada:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>12 - O jeito que você chora com as coisas que eu escrevo:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>13 - A maneira como me apoia nas coisas mais bestas que existem:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>14 - Como eu posso confiar em você:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>15 - O jeito que você faz meus dias melhores:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>16 - A maneira como me faz rir:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>17 - Suas dicas!:</strong></p>
+        </div>
+        <div class="item">
+            <p><strong>18 - Amo tudo em você, porque você é a melhor pessoa que já conheci e amei ter conhecido na minha vida.</strong></p>
+        </div>
+
+        <a class="continue-button" href="https://gifft.me/d#JimuTLDBViIaUlksA2qt" target="_blank">Clique aqui para continuar</a>
+    </div>
+
+    <script>
+        function verificarSenha() {
+            var senhaDigitada = document.getElementById("senha").value;
+            if (senhaDigitada === "040224") {
+                document.getElementById("senhaContainer").style.display = "none";
+                document.getElementById("conteudoSecreto").style.display = "block";
+            } else {
+                document.getElementById("erro").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
